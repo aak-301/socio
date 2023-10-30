@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import "./global.css";
+import "./globals.css";
 import SigninForm from "./_auth/forms/SigninForm";
 import SignupForm from "./_auth/forms/SignupForm";
 import { Home } from "./_root/pages";
@@ -13,7 +13,7 @@ function App() {
         {/* Public Routes */}
         <Route element={<AuthLayout />}>
           <Route path="/sign-in" element={<SigninForm />} />
-          <Route path="/sign-in" element={<SignupForm />} />
+          <Route path="/sign-up" element={<SignupForm />} />
         </Route>
 
         {/* Private Routes */}
