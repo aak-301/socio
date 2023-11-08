@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -15,9 +14,7 @@ import { Input } from "@/components/ui/input";
 import { SignUpValidation } from "@/lib/validation/index";
 import Loader from "@/components/shared/Loader";
 import { Link, useNavigate } from "react-router-dom";
-import { createUserAccount } from "@/lib/appwrite/api";
 import { useToast } from "@/components/ui/use-toast";
-import { ToastAction } from "@radix-ui/react-toast";
 import {
   useCreateUserAccount,
   useSignInAccount,
@@ -27,13 +24,12 @@ import { useUserContext } from "@/context/AuthContext";
 function SignupForm() {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
+  const { checkAuthUser } = useUserContext();
 
   const { mutateAsync: createUserAccount, isPending: isCreatingUser } =
     useCreateUserAccount();
 
-  const { mutateAsync: signInAccount, isPending: isSigingIn } =
-    useSignInAccount();
+  const { mutateAsync: signInAccount } = useSignInAccount();
 
   const form = useForm<z.infer<typeof SignUpValidation>>({
     resolver: zodResolver(SignUpValidation),
