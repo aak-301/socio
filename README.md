@@ -10,8 +10,7 @@ This  is a social Media Web-app
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/aak-301/socio/assets/76422079/2040e7a9-566f-494b-b002-6ac3fe236cce">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/aak-301/socio/assets/76422079/daf2d061-e02c-4914-b3ec-d087f5a81dfd">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/aak-301/socio/assets/76422079/aee7174b-b0fa-445e-938a-24643f06b3ab">|
 
 ## About
-
-This project is originally created by [JSMastery](https://www.youtube.com/watch?v=_W3R2VwRyF4&t=8131s). I followed this tutorial,and developed the project in order to learn React and Appwrite. This was an amazing learing. Appwrite is much more easy to start with. And since it can be integrated with wide variety of tech stack, it can be handy to learn it using one tech stack and use it with any other.
+Appwrite is much more easy to start with. And since it can be integrated with wide variety of tech stack, it can be handy to learn it using one tech stack and use it with any other.
 
 ## Key Features
 
